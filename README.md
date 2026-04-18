@@ -36,8 +36,8 @@ A professional rigged gambling Discord bot featuring 10+ interactive games, a re
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/redot-bet.git
-   cd redot-bet
+   git clone https://github.com/randomname2323/Redot-Gambling-Bot.git
+   cd Redot-Gambling-Bot
    ```
 
 2. **Install Dependencies**:
