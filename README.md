@@ -36,7 +36,7 @@ A professional rigged gambling Discord bot featuring 10+ interactive games, a re
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/randomname2323/Redot-Gambling-Bot.git
+   git clone https://github.com/zyrexdz/Redot-Gambling-Bot.git
    cd Redot-Gambling-Bot
    ```
 
@@ -86,4 +86,4 @@ Redot BET includes a built-in "Auditor Engine" that logs significant wins, losse
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-*Built with ❤️ by RandomName*
+*Built with ❤️ by Zyre*
