@@ -8,13 +8,17 @@ from utils import (admin_role, gamble_chan, bot_name,
                    can_claim, do_claim, fetch_usr, em_color, em_win,
                    em_lose, em_info, em_gold)
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 intents = discord.Intents.default()
 intents.message_content = True
 intents.members = True
 
 bot = commands.Bot(command_prefix=".", intents=intents, help_command=None)
 
-token = "Your token here"
+token = os.getenv("DISCORD_TOKEN", "Your token here")
 
 @bot.check
 async def chk_channel(ctx):

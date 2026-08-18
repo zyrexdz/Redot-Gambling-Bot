@@ -6,17 +6,21 @@ import aiohttp
 import discord
 from datetime import datetime, timezone, timedelta
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 data_dir = os.path.dirname(os.path.abspath(__file__))
 users_file = os.path.join(data_dir, "users.json")
 lb_file = os.path.join(data_dir, "leaderboard.json")
 
-ltc_addr = "ur ltc addy here"
-bot_name = "Redot BET"
-admin_role = #admin role id
+ltc_addr = os.getenv("LTC_ADDRESS", "ur ltc addy here")
+bot_name = os.getenv("BOT_NAME", "Redot BET")
+admin_role = int(os.getenv("ADMIN_ROLE_ID", "0"))
 
-gamble_chan = #gamble channel id
-algo_chan = #algorithm channel id
-deposit_chan = #deposit channel id
+gamble_chan = int(os.getenv("GAMBLE_CHANNEL_ID", "0"))
+algo_chan = int(os.getenv("ALGO_CHANNEL_ID", "0"))
+deposit_chan = int(os.getenv("DEPOSIT_CHANNEL_ID", "0"))
 
 gamble_roles = {
     10.0: "💰 Bronze Gambler ($10+)",
